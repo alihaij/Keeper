@@ -1,7 +1,14 @@
 import React from "react";
+var currentYear = new Date().getFullYear(); 
+function Note(props){
+    
+   
 
-function Note(){
-    return <div className="note"> <p>This is Note</p></div>
+    return <div className="note">
+    <h1>{props.title} </h1>
+     <p>{props.content}</p>
+     
+     </div>
 }
 
 export default Note;
